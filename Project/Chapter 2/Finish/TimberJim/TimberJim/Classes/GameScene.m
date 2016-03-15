@@ -11,9 +11,6 @@
 #pragma mark - Class Private Interface
 @interface GameScene()
 
-@property CGSize viewSize;
-@property NSTimeInterval lastUpdateTime;
-
 @end
 
 #pragma mark - Class Implementation
@@ -34,40 +31,27 @@
 #pragma mark - Setup
 -(void)setupScene {
     
-    // Configure the class properties
-    _viewSize = self.size;
-    _lastUpdateTime = 0.0;
-    
-    // Set the backgroundColor to Black
     self.backgroundColor = [SKColor blackColor];
     
-    // Create an instance of our Bitmap font and make a label with it.
     BMGlyphFont *glyphFont = [BMGlyphFont fontWithName:@"GameFont"];
     BMGlyphLabel *label = [BMGlyphLabel labelWithText:@"Yay, it works!" font:glyphFont];
-    label.position = ScreenCenter();
+    label.position = CGPointMake(ScreenSize().width / 2, ScreenSize().height / 2);
     [self addChild:label];
     
-    // Run a scale sequence action on the label
     [label runAction:[SKAction scaleTo:1.1 duration:0.25] completion:^{
         [label runAction:[SKAction scaleTo:1.0 duration:0.25]];
     }];
     
 }
 
-
+#pragma mark - Touch Handling
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    UITouch *touch = [touches anyObject];
-    CGPoint touchLocation = [touch locationInNode:self.scene];
-    
     
 }
 
+
+#pragma mark - Update
 -(void)update:(NSTimeInterval)currentTime {
-    // Calculate "Delta"
-    NSTimeInterval delta = currentTime - self.lastUpdateTime;
-    self.lastUpdateTime = currentTime;
-    
     
 }
 

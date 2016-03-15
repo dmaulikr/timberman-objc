@@ -18,27 +18,10 @@ static __inline CGSize ScreenSize() {
     return [UIScreen mainScreen].bounds.size;
 }
 
-static __inline__ CGPoint ScreenCenter() {
-    CGSize screenSize = ScreenSize();
-    return CGPointMake(screenSize.width / 2, screenSize.height / 2);
+#pragma mark - Device Type
+static __inline__ BOOL DeviceIsPad() {
+    return UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
 }
-
-static __inline__ CGPoint ScreenCenterBottom() {
-    CGSize screenSize = ScreenSize();
-    return CGPointMake(screenSize.width / 2, screenSize.height * 0.3);
-}
-
-
-#pragma mark - Animation Functions
-static __inline__ float Smooth(float startingPoint, float endingPoint, float percentToMove) {
-    return (startingPoint * (1 - percentToMove)) + endingPoint * percentToMove;
-}
-
-#pragma mark - Color Functions
-static __inline__ SKColor* ColorFromRGB(int rgbValue) {
-    return [SKColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0];
-}
-
 
 #pragma mark - Math Functions
 static __inline__ int RandomIntegerBetween(int min, int max) {
