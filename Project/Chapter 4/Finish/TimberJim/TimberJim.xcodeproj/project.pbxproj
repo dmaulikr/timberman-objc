@@ -73,6 +73,7 @@
 		3F5D562D1C99AED200EAB2EC /* Birds.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D562C1C99AED200EAB2EC /* Birds.m */; };
 		3F5D56321C99BE7000EAB2EC /* Branch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D56311C99BE7000EAB2EC /* Branch.m */; };
 		3F5D56351C99C34F00EAB2EC /* StackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D56341C99C34F00EAB2EC /* StackController.m */; };
+		3F5D56391C99F8C200EAB2EC /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D56381C99F8C200EAB2EC /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,8 @@
 		3F5D56311C99BE7000EAB2EC /* Branch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Branch.m; sourceTree = "<group>"; };
 		3F5D56331C99C34F00EAB2EC /* StackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackController.h; sourceTree = "<group>"; };
 		3F5D56341C99C34F00EAB2EC /* StackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackController.m; sourceTree = "<group>"; };
+		3F5D56371C99F8C200EAB2EC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		3F5D56381C99F8C200EAB2EC /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,7 @@
 		3F3772D01C93B84800BA805D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F5D56361C99F8B200EAB2EC /* Player */,
 				3F5D562F1C99BE5B00EAB2EC /* Stack */,
 				3F5D56271C98967400EAB2EC /* Environment */,
 				3F5D56221C98874800EAB2EC /* Singletons */,
@@ -608,6 +612,15 @@
 			name = Stack;
 			sourceTree = "<group>";
 		};
+		3F5D56361C99F8B200EAB2EC /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3F5D56371C99F8C200EAB2EC /* Player.h */,
+				3F5D56381C99F8C200EAB2EC /* Player.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -793,6 +806,7 @@
 				3F3773681C93B8B000BA805D /* ALListener.m in Sources */,
 				3F3773631C93B8B000BA805D /* ALBuffer.m in Sources */,
 				3F37735F1C93B8B000BA805D /* OALAudioTrackNotifications.m in Sources */,
+				3F5D56391C99F8C200EAB2EC /* Player.m in Sources */,
 				3F3773671C93B8B000BA805D /* ALDevice.m in Sources */,
 				3F37735C1C93B8B000BA805D /* OALAudioActions.m in Sources */,
 				3F3773621C93B8B000BA805D /* OALSimpleAudio.m in Sources */,
