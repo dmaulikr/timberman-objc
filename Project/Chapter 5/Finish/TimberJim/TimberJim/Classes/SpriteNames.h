@@ -32,5 +32,10 @@ static NSString *const SMOKE3 = @"Smoke3";
 static NSString *const SMOKE4 = @"Smoke4";
 static NSString *const TOMBSTONE = @"Tombstone";
 
+// Buttons
+static NSString *const TAPLEFT = @"TapLeft";
+static NSString *const TAPRIGHT = @"TapRight";
+static NSString *const PLAYBUTTON = @"PlayButton";
+
 
 #endif /* SpriteNames_h */

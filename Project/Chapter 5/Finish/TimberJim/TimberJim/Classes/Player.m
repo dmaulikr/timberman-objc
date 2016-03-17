@@ -76,6 +76,8 @@
     self.xScale = 1;
     
     [self runAction:self.animationChop];
+    
+    [[OALSimpleAudio sharedInstance] playEffect:@"Chop.caf"];
 }
 
 -(void)chopRight {
@@ -86,6 +88,8 @@
     self.xScale = -1;
     
     [self runAction:self.animationChop];
+    
+    [[OALSimpleAudio sharedInstance] playEffect:@"Chop.caf"];
 }
 
 #pragma mark - Get Taps
@@ -100,6 +104,8 @@
     [self addChild:smoke];
     
     [smoke animateSmoke];
+    
+    [[OALSimpleAudio sharedInstance] playEffect:@"GameOver.caf"];
 }
 
 #pragma mark - Game Over

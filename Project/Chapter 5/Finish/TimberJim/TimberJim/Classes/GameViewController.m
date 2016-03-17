@@ -37,6 +37,16 @@
         [skView presentScene:scene transition:transition];
         
         
+        // Preload Sound Effects
+        [[OALSimpleAudio sharedInstance] preloadEffect:@"Chop.caf"];
+        [[OALSimpleAudio sharedInstance] preloadEffect:@"GameOver.caf"];
+        [[OALSimpleAudio sharedInstance] preloadEffect:@"Pop.caf"];
+    
+        // Preload and play Music
+        [[OALSimpleAudio sharedInstance] playBg:@"SomeoneCalls.mp3" loop:YES];
+        
+        
+        
         if (kDebug) {
             NSLog(@"Screen width: %.2f, Screen height: %.2f", viewSize.width, viewSize.height);
         }
