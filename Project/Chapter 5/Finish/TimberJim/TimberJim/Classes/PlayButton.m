@@ -38,8 +38,6 @@
 
 -(void)animateOut {
     [self runAction:[SKAction scaleTo:0 duration:0.25]];
-    
-    [[OALSimpleAudio sharedInstance] playEffect:@"Pop.caf"];
 }
 
 @end

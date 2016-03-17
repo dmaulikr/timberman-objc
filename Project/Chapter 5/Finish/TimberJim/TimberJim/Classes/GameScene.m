@@ -193,6 +193,8 @@ typedef NS_ENUM(NSInteger, GameState) {
 }
 
 -(void)resetGame {
+    [[OALSimpleAudio sharedInstance] playEffect:@"Pop.caf"];
+    
     [self removeAllChildren];
     
     SKScene *scene = [GameScene sceneWithSize:ScreenSize()];
