@@ -37,5 +37,9 @@ static NSString *const TAPLEFT = @"TapLeft";
 static NSString *const TAPRIGHT = @"TapRight";
 static NSString *const PLAYBUTTON = @"PlayButton";
 
+// Time Bar
+static NSString *const TIMEBARBACKGROUND = @"TimeBarBackground";
+static NSString *const TIMEBAR = @"TimeBar";
+
 
 #endif /* SpriteNames_h */

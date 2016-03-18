@@ -79,6 +79,8 @@
 		3FFA7ACC1C9B4BF80016691B /* Chop.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C7A2E1C97A733004C5BA3 /* Chop.caf */; };
 		3FFA7ACD1C9B4BFB0016691B /* GameOver.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F2C7A2F1C97A741004C5BA3 /* GameOver.caf */; };
 		3FFA7ACF1C9B85090016691B /* SpiritualMoments.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3FFA7ACE1C9B85090016691B /* SpiritualMoments.mp3 */; };
+		3FFA7AD31C9B8A2E0016691B /* ScoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA7AD21C9B8A2E0016691B /* ScoreLabel.m */; };
+		3FFA7AD71C9B925D0016691B /* TimeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA7AD61C9B925D0016691B /* TimeBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +234,10 @@
 		3FFA7AC91C9B2A6D0016691B /* PlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayButton.h; sourceTree = "<group>"; };
 		3FFA7ACA1C9B2A6D0016691B /* PlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayButton.m; sourceTree = "<group>"; };
 		3FFA7ACE1C9B85090016691B /* SpiritualMoments.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SpiritualMoments.mp3; sourceTree = "<group>"; };
+		3FFA7AD11C9B8A2E0016691B /* ScoreLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreLabel.h; sourceTree = "<group>"; };
+		3FFA7AD21C9B8A2E0016691B /* ScoreLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreLabel.m; sourceTree = "<group>"; };
+		3FFA7AD51C9B925D0016691B /* TimeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeBar.h; sourceTree = "<group>"; };
+		3FFA7AD61C9B925D0016691B /* TimeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +337,8 @@
 		3F3772D01C93B84800BA805D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3FFA7AD41C9B91EF0016691B /* TimeBar */,
+				3FFA7AD01C9B8A1D0016691B /* ScoreLabel */,
 				3FFA7AC51C9B241E0016691B /* Buttons */,
 				3F5D56361C99F8B200EAB2EC /* Player */,
 				3F5D562F1C99BE5B00EAB2EC /* Stack */,
@@ -646,6 +654,24 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		3FFA7AD01C9B8A1D0016691B /* ScoreLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA7AD11C9B8A2E0016691B /* ScoreLabel.h */,
+				3FFA7AD21C9B8A2E0016691B /* ScoreLabel.m */,
+			);
+			name = ScoreLabel;
+			sourceTree = "<group>";
+		};
+		3FFA7AD41C9B91EF0016691B /* TimeBar */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA7AD51C9B925D0016691B /* TimeBar.h */,
+				3FFA7AD61C9B925D0016691B /* TimeBar.m */,
+			);
+			name = TimeBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -816,10 +842,12 @@
 				3F37736C1C93B8B000BA805D /* OpenALManager.m in Sources */,
 				3F5D56251C98882700EAB2EC /* GameTextures.m in Sources */,
 				3F5D56321C99BE7000EAB2EC /* Branch.m in Sources */,
+				3FFA7AD71C9B925D0016691B /* TimeBar.m in Sources */,
 				3F3772D81C93B84800BA805D /* GameScene.m in Sources */,
 				3F3773721C93B8B000BA805D /* NSMutableDictionary+WeakReferences.m in Sources */,
 				3F5D562D1C99AED200EAB2EC /* Birds.m in Sources */,
 				3F37736A1C93B8B000BA805D /* ALSource.m in Sources */,
+				3FFA7AD31C9B8A2E0016691B /* ScoreLabel.m in Sources */,
 				3F37736D1C93B8B000BA805D /* OALAudioSession.m in Sources */,
 				3F5D56351C99C34F00EAB2EC /* StackController.m in Sources */,
 				3FFA7AC41C9B10F50016691B /* Player.m in Sources */,
