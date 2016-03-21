@@ -1,4 +1,4 @@
-# Make a game like Timberman with SpriteKit
+# Make a game like Timberman
 
 Learn to make 2D Games for Apple Devices by building a clone of the hit game Timberman.
 
