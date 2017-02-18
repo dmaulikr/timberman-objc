@@ -11,7 +11,7 @@ All you need is a Mac and <a href="https://itunes.apple.com/us/app/xcode/id49779
 
 **Make a game like Timberman** has been made into a free e-book for those interested in building a game with SpriteKit and Objective-C. 
 
-The current version focuses on Swift 3 and is available on the iBooks store only.  
+The <a href="https://github.com/spritekitbook/timberman-swift">current version</a> focuses on Swift 3 and is available on the iBooks store only.  
 
 <p align="center">
   <img src="https://github.com/spritekitbook/timberman-objc/blob/master/Timberman%20Cover.png" width="50%">
